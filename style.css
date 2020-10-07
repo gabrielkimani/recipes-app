@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+section {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 90px 0;
+	background-color: #131419;
+}
+
+.container {
+	width: 90%;
+	height: auto;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.title {
+	text-align: center;
+	padding: 40px 0;
+	color: #fff;
+	font-size: 34px;
+}
+p {
+	color: rgb(38, 228, 13);
+	line-height: 25px;
+	margin-top: 3px;
+}
+form {
+	width: 90%;
+	max-width: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px auto;
+}
+
+form input {
+	margin: 10px;
+	padding: 5px;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	width: 100%;
+	border-radius: 50px;
+	background: #3c4449;
+	color: honeydew;
+	border: 8px solid #131419;
+	box-shadow: -7px -7px 15px rgba(224, 187, 187, 0.05),
+		7px 7px 15px rgba(0, 0, 0, 0.45),
+		inset -7px -7px 15px rgba(255, 255, 255, 0.05),
+		inset 7px 7px 15px rgba(0, 0, 0, 0.45);
+}
+
+select {
+	font-size: 18px;
+    border: none;
+    width: 170px;
+	outline: none;
+	border-radius: 50px;
+    background: #3c4449;
+    margin: 15px;
+	color: honeydew;
+	border: 8px solid #131419;
+	box-shadow: -7px -7px 15px rgba(224, 187, 187, 0.05),
+		7px 7px 15px rgba(0, 0, 0, 0.45),
+		inset -7px -7px 15px rgba(255, 255, 255, 0.05),
+		inset 7px 7px 15px rgba(0, 0, 0, 0.45);
+}
+
+button {
+	padding: 3px 15px;
+	text-align: center;
+	width: 80px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+	background: #3c4449;
+	border-radius: 18px;
+	outline: none;
+	color: #fff;
+	border: 5px solid #131419;
+	box-shadow: -7px -7px 15px rgba(224, 187, 187, 0.05),
+		7px 7px 15px rgba(0, 0, 0, 0.45), -7px -7px 15px rgba(255, 255, 255, 0.05),
+		7px 7px 15px rgba(0, 0, 0, 0.45);
+}
+
+form button:hover {
+	line-height: 1;
+	box-shadow: inset -5px -5px 7px rgba(121, 121, 121, 0.3),
+		inset 5px 7px 16px rgba(0, 0, 0, 0.335);
+}
+
+.recipes-container {
+	width: 100%;
+	margin-top: 80px;
+	display: grid;
+	grid-gap: 25px;
+	grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+	padding: 15px;
+	background-color: #333;
+	border-radius: 5px;
+	color: #fff;
+	background: #3c4449;
+	border: 8px solid #131419;
+	box-shadow: -7px -7px 15px rgba(224, 187, 187, 0.05),
+		7px 7px 15px rgba(0, 0, 0, 0.45),
+		inset -7px -7px 15px rgba(255, 255, 255, 0.05),
+		inset 7px 7px 15px rgba(0, 0, 0, 0.45);
+}
+
+.item img {
+	width: 100%;
+	height: 300px;
+	border-radius: 4px;
+}
+
+.item-info {
+	display: flex;
+	margin: 10px 10px 5px 0;
+	justify-content: space-between;
+}
+
+.item-info h2 {
+	font-size: 22px;
+	color: yellow;
+}
+
+h2 {
+	font-size: 22px;
+	color: yellow;
+}
+.item h3 {
+	letter-spacing: 2px;
+}
+
+.item:hover {
+	scale: 0.6;
+}
+
+.item button {
+	text-decoration: none;
+	text-align: center;
+	font-size: 15px;
+	padding: 5px;
+	width: 45%;
+	height: 30px;
+	border-radius: 3px;
+	margin-top: 5px;
+	color: #fff;
+	background: #111;
+	outline: none;
+	border: none;
+}
+
+.item button:hover {
+	background-color: rgb(105, 105, 14);
+	transition: 0.9s;
+}
+
+footer {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.footer-text {
+	justify-content: center;
+	align-items: center;
+	color: rgb(119, 115, 115);
+	letter-spacing: 2.9px;
+	box-shadow: -7px -7px 15px rgba(224, 187, 187, 0.05),
+		7px 7px 15px rgba(0, 0, 0, 0.45), -7px -7px 15px rgba(255, 255, 255, 0.05),
+		7px 7px 15px rgba(0, 0, 0, 0.45);
+}
+
+@media(max-width: 600px){
+   form{
+    flex-direction: column;
+   }
+   select{
+       width: 100%;
+       margin: 10px 15px 30px 10px;
+   }
+}
