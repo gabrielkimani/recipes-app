@@ -30,7 +30,7 @@ function getRecipes(recipes, search) {
 	let h = document.createElement('p');
 	h.classList.add('results');
 	let text = document.createTextNode(
-		`Showing ${recipes.length} results of ${search}`
+		`Showing ${recipes.length} results of "${search}"`
 	);
 	h.appendChild(text);
 	let title = document.querySelector('.title');
