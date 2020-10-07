@@ -38,7 +38,7 @@ function getRecipes(recipes, search) {
 	setTimeout(() => {
 		document.querySelector('.results').remove();
 	}, 5000);
-	if (recipes.length < `${optionValue}`) {
+	if (recipes.length < 0) {
 		text.textContent = `loading...oops! we seem not to have "${search}"`;
 	}
 	recipes.map(item => {
