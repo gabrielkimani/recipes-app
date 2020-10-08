@@ -39,7 +39,7 @@ function getRecipes(recipes, search) {
 		document.querySelector('.results').remove();
 	}, 5000);
 	if (recipes.length < 0) {
-		text.textContent = `loading...oops! we seem not to have "${search}"`;
+		text.textContent = `oops! "${search}" is missing!`;
 	}
 	recipes.map(item => {
 		generatedRecipes += `
